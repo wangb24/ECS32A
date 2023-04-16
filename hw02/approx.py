@@ -40,6 +40,7 @@ def main() -> None:
 
     # Else, the inputs are different
     print('Those numbers are different')
+    return
 
 
 # Run the program
