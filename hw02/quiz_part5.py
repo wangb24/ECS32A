@@ -54,9 +54,6 @@ def ask_question(prompt: str, correct_answer: str) -> bool:
     # Then ask the user for their answer
     user_answer = input('Enter your choice:')
 
-    # Check if user_answer is invalid
-    print('Invalid input! Enter a, b, or c next time.') if user_answer.lower().strip() not in ['a', 'b', 'c'] else None  # Added this line to check if user_answer is invalid. It is supposed to be in part 6. However, gradescope looked for it, so I added it.
-
     # The following code prints the result
     if user_answer.lower().strip() == correct_answer:
         print('Correct!')
@@ -91,5 +88,5 @@ elif score <= 4:
 elif score <= 6:
     print('Excellent!')
 else:
-    print('You are a genius!')
+    print('Genius!')
 
