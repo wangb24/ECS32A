@@ -11,6 +11,8 @@ total_price = float(input("Enter total:"))
 
 # Calculate the tip
 i = 15
+# If the variable i, representing the tip percentage,
+# is less than or equal to 25, then print the tip amount
 while i <= 25:
     print(f"A {i}% tip is ${total_price * i / 100:.2f}")
     i += 1
