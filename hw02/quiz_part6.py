@@ -1,5 +1,5 @@
 '''quiz_part6.py
-(c) Bode W | Apache License 2.0
+Bode W
 Homework 2 | Part 6
 
 The code would ask user 5 questions and then print the results.

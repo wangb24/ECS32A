@@ -1,5 +1,5 @@
 '''approx.py
-(c) Bode W | Apache License 2.0
+Bode W
 Homework 2 | Challenge Problem
 
 The code would ask user to enter two floating point numbers.
