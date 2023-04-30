@@ -2,6 +2,11 @@
 Bode W
 Homework 3 | Challenge Problem
 
+ ___|_|  ___ _ _ 
+| . | |_| . | | |
+|  _|_|_|  _|_  |
+|_|     |_| |___|
+
 This program will estimate pi using following infinite series:
 pi = 4 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 + ...
 The program will prompt number of terms to use in the series,
