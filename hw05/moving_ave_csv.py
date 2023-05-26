@@ -18,3 +18,4 @@ for yrs, avg in zip(moving_ave.c_year, moving_ave.average):
 with open('MovingAve.csv', 'w', encoding='utf-8') as file:
     file.write("Year,Value\n")  # write the header
     file.write('\n'.join(contents))  # write the contents
+    file.write('\n')
