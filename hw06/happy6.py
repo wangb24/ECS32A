@@ -28,14 +28,14 @@ def main():
 
 
 
-def make_happy_dict():
-    '''make_happy_dict() -> dict
+def make_happy_dict(data_path: str = DATA_PATH) -> dict:
+    '''make_happy_dict(data_path) -> dict
     This function will open and read the data file and return a dictionary
     mapping country names to happiness index values.
     '''
     happy_dict = {}  # initialize empty dictionary
     # open file for reading
-    with open(DATA_PATH + "happiness.csv", "r", encoding="utf-8") as csv_happiness:
+    with open(data_path + "happiness.csv", "r", encoding="utf-8") as csv_happiness:
         csv_happiness.readline()  # skip first line that contain column headers
         # read each line in the file
         for line in csv_happiness:
@@ -60,13 +60,13 @@ def read_gdp_data(happy_dict: dict) -> None:
     print_2d_list(selected_data)
 
 
-def read_gdp_file_and_convert_to_list() -> list:
+def read_gdp_file_and_convert_to_list(data_path: str = DATA_PATH) -> list:
     '''read_gdp_file_and_convert_to_list() -> list
     This function will read the tsv file containing GDP data and convert it
     to a two dimensional list.  It will return the list.'''
     data = []
     # This opens the file for reading
-    with open(DATA_PATH + "world_pop_gdp.tsv", 'r', encoding='utf-8') as gdp_data_file:
+    with open(data_path + "world_pop_gdp.tsv", 'r', encoding='utf-8') as gdp_data_file:
         # This for loop will read each line in the file
         for line in gdp_data_file:
             # First strip the line of any leading or trailing whitespace
@@ -166,4 +166,6 @@ def print_sorted_dictionary(D):
     for key in sorted(D.keys()):
         print(key, D[key])
 
-main()
+
+if __name__ == "__main__":
+    main()
