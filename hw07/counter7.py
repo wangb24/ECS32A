@@ -91,7 +91,7 @@ class Count:
     #
     # The method returns a list of num (count,word) tuples
     # sorted from highest to lowest.
-    def get_top_words(self, num: int) -> list[tuple([int, str])]:
+    def get_top_words(self, num: int) -> list:
         '''
         This method will return a list of (count,word) tuples of the
         num most frequent words in the dictionary.'''

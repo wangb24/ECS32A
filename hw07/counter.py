@@ -77,7 +77,7 @@ class Count:
         return self.word_counts.get(word, 0)
 
 
-    def get_top_words(self, num: int) -> list[tuple]:
+    def get_top_words(self, num: int) -> list:
         '''
         This method will return a list of (count,word) tuples of the
         num most frequent words in the dictionary.'''
