@@ -95,12 +95,12 @@ class Count:
         '''
         This method will return a list of (count,word) tuples of the
         num most frequent words in the dictionary.'''
-        # Create a list of (count,word) tuples
-        all_words = [(count, word) for word, count in self.word_counts.items()]
-        # Sort the list from highest to lowest
-        all_words.sort(reverse=True)
-        # Return the first num words
-        return all_words[:num]
+        # Sort the words in the dictionary by count
+        sorted_words = sorted(self.word_counts.items(), key=lambda x: x[1], reverse = True)
+        # Flip the order of the (word,count) tuples
+        sorted_words = [(count, word) for word, count in sorted_words]
+        # Return the top num words
+        return sorted_words[:num]
 
 # The main program
 def main():
@@ -145,5 +145,4 @@ def main():
 ##        wordle.wordleFromObject(counter,30)
 
 # Call the main program
-if __name__ == '__main__':
-    main()
+main()
